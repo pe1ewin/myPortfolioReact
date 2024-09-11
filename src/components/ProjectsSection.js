@@ -11,24 +11,24 @@ const projects = [
     link: "/breadcat",
   },
   {
-    title: "React Infinite Scroll",
+    title: "Ninja Game on Python",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
-    getImageSrc: () => require("../images/photo2.jpg"),
+      "Simple game on python",
+    getImageSrc: () => require("../images/ninja_game.png"),
     link:"#",
   },
   {
-    title: "Photo Gallery",
+    title: "Lorem ipsum",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
-    getImageSrc: () => require("../images/photo3.jpg"),
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    getImageSrc: () => require(""),
     link:"#",
   },
   {
-    title: "Event planner",
+    title: "Lorem ipsum",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../images/photo4.jpg"),
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    getImageSrc: () => require(""),
     link:"#",
   },
 ];
