@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Heading, VStack, useDisclosure } from "@chakra-ui/react";
+import { Avatar, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import { TypeAnimation } from 'react-type-animation';
 
@@ -22,9 +22,9 @@ const LandingSection = () => (
   >
     <VStack>
     <Avatar size="2xl" src='https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTkyajJzcmtxNmRkNDJraWJtZHp0YTgxeHBueDZycHYzdGN5Y25ubyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HscDLzkO8EOTmgkhQP/giphy.gif'></Avatar>
-    <Heading>{greeting}</Heading>
-    <Heading>{bio}</Heading>
-    <Heading>{skill_list}</Heading>
+    <Heading as="h3" size="xl">{greeting}</Heading>
+    <Heading as="h2" size="lg">{bio}</Heading>
+    <Heading as="h3" size="md">{skill_list}</Heading>
     <Heading>
       <TypeAnimation
         sequence={[

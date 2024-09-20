@@ -12,6 +12,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="breadcat" element={<BreadCatProject/>}/>
+              <Route path="ninja_python" element={<BreadCatProject/>}/>
             </Routes>
           </Router>
         </main>

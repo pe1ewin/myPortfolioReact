@@ -61,14 +61,14 @@ const Header = () => {
       zIndex={1}
       translateY={0}
       transitionProperty="transform"
-      transitionDuration=".3s"
+      transitionDuration=".5s"
       transitionTimingFunction="ease-in-out"
       backgroundColor="#18181b"
       ref={headerSection}
     >  
       <Box color="white" w="100%" margin="0 auto">
         <HStack
-          px={12}
+          px={5}
           py={4}
           justifyContent="space-between"
           alignItems="center"
@@ -81,7 +81,7 @@ const Header = () => {
             </HStack>
           </nav>
           <nav>
-            <HStack spacing={6}>
+            <HStack fontSize="md" spacing={6}>
               <a onClick={handleClick('projects')} href='/#projects'>Projects</a>
               <a onClick={handleClick('contactme')} href='/#contact-me'>Contact me</a>
             </HStack>

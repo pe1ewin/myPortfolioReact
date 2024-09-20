@@ -1,7 +1,15 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Box, Heading } from "@chakra-ui/react";
+import { Heading, SimpleGrid } from "@chakra-ui/react";
 import Card from "./Card";
+let screenWidth = window.innerWidth;
+let columnCount = 2;
+if (screenWidth > 1280) {
+  columnCount = 2
+} else {
+  columnCount = 1
+};
+
 const projects = [
   {
     title: "BreadCat",
@@ -15,20 +23,6 @@ const projects = [
     description:
       "Simple game on python",
     getImageSrc: () => require("../images/ninja_game.png"),
-    link:"#",
-  },
-  {
-    title: "Lorem ipsum",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    getImageSrc: () => require(""),
-    link:"#",
-  },
-  {
-    title: "Lorem ipsum",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    getImageSrc: () => require(""),
     link:"#",
   },
 ];
@@ -45,11 +39,7 @@ const ProjectsSection = () => {
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
-      <Box
-        display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap={8}
-      >
+      <SimpleGrid columns={columnCount} gap={10}>
         {projects.map((project) => (
           <Card
             key={project.title}
@@ -59,7 +49,7 @@ const ProjectsSection = () => {
             link={project.link}
           />
         ))}
-      </Box>
+      </SimpleGrid>
     </FullScreenSection>
   );
 };

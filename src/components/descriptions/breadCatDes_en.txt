@@ -1,0 +1,8 @@
+A small website made with classic HTML and CSS, as well as Bootstrap 5.
+The author of the design project and animation is Eva Markova (link)
+
+The site is a course for a cat
+who loved to steal bread and 
+decided to teach other cats to do it.
+
+The code for this site is available on my github at the link below:

@@ -54,10 +54,10 @@ const LandingSection = () => {
       spacing={8}
     >
       <VStack w="100%" p={16} alignItems="flex-start">
-        <Heading as="h1" id="contactme-section">
+        <Heading as="h1" id="contactme-section" mx="auto">
           Contact me
         </Heading>
-        <Box p={4} rounded="md" w="100%">
+        <Box p={4} backgroundColor="#ffffff" rounded="lg" w="100%">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
               <FormControl borderColor="black" isInvalid={!!formik.errors.firstName && formik.touched.firstName}>
@@ -73,8 +73,8 @@ const LandingSection = () => {
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
                 <Select borderColor="black" color='#000'id="type" name="type" {...formik.getFieldProps("type")}>
-                  <option value="hireMe">Freelance project proposal</option>
-                  <option value="openSource">Open source consultancy session</option>
+                  <option value="hireMe">Job offer</option>
+                  <option value="openSource">Question to the author</option>
                   <option value="other">Other</option>
                 </Select>
               </FormControl>
@@ -83,7 +83,7 @@ const LandingSection = () => {
                 <Textarea id="comment" name="comment" height={250} {...formik.getFieldProps("comment")}/>
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button type="submit" border="1px" color="black" borderColor="black" backgroundColor="#9d99bc" width="full" disabled={isLoading}>Submit</Button>
+              <Button type="submit" border="1px" color="black" borderColor="black" width="full" disabled={isLoading}>Submit</Button>
             </VStack>
           </form>
         </Box>
