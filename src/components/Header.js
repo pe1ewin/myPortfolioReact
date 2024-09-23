@@ -6,7 +6,6 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 const socials = [
   {

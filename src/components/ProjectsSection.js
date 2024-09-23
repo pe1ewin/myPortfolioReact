@@ -22,8 +22,8 @@ const projects = [
     title: "Ninja Game on Python",
     description:
       "Simple game on python",
-    getImageSrc: () => require("../images/ninja_game.png"),
-    link:"#",
+    getImageSrc: () => require("../images/ninjaMain.png"),
+    link:"/ninja_python",
   },
 ];
 
